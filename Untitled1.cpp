@@ -5,7 +5,7 @@ int main()
 	int a,b;
 	cout<<"nhap vao a,b";
 	cin>>a>>b;
-	int tong=a+b;
+	int tong=2*a+b;
 	cout<<tong;
 	return 0;
 }
