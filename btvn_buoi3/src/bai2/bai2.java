@@ -27,5 +27,4 @@ public class bai2 {
      }
       System.out.println("kq: "+t);
     }
-  
 }
