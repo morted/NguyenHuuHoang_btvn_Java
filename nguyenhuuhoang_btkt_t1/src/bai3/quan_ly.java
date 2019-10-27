@@ -5,13 +5,10 @@
  */
 package bai3;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Administrato
  */
-public class java_class {
-    Scanner sc=new Scanner (System.in);
+public class quan_ly {
     
 }
