@@ -10,11 +10,16 @@ package bai3;
  * @author Administrato
  */
 public class human1 {
-    private String ten="A";
+    private String ten;
 
     public String getTen() {
         return ten;
     }
+
+    public void setTen(String ten) {
+        this.ten = ten;
+    }
+    
     
      private int HP=5000;
 
@@ -32,14 +37,12 @@ public class human1 {
         return DMG;
     }
      
-     private int Attack=4;
-
-    public int getAttack() {
-        return Attack;
+    public void Attack(human1 A) {
+        A.setHP(A.getHP() - this.DMG);
     }
      
     public void show()
     {
-        System.out.println("thong so hien tai cua A: HP="+HP);
+        System.out.println(ten + " ,HP="+HP);
     }
 }

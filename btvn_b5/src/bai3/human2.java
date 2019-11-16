@@ -34,8 +34,8 @@ public class human2 {
      
      private int Attack=5;
 
-    public int getAttack() {
-        return Attack;
+    public void Attack(human1 A) {
+        A.setHP(A.getHP() - this.DMG);
     }
      
      public void show()

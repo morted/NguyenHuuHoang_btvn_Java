@@ -27,9 +27,19 @@ public class Knight {
      
      public void Heal()
      {
-         MP-=50;
-         HP+=30;
+         if (this.MP>=50)
+         {
+             System.out.println("su dung hoi mau");
+              MP-=50;
+              HP+=30;
+         }
+         else
+         {
+             System.out.println("het mp");
+         }
+        
      }
+     
      public void show()
      {
          System.out.println("trang thai hien tai: HP="+HP+"     MP="+MP);
