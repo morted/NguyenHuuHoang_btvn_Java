@@ -18,9 +18,22 @@ public class Tk extends User {
     public Tk(String id, String pass, String ten, int maso,String sdt) {
         super(id, pass, ten, maso,sdt);
     }
-    void them_TK(User A)
+    void Create()
     {
-        
+        User A=new Tk("Admin","123456","Quan ly",0,"012345678");
+        Tk.add(A);
+        User B=new Tk("Person1","123456","nguoi xem 1",1,"012345678");
+        Tk.add(B);
+        User C=new Tk("Admin","123456","nguoi xem 2",2,"012345678");
+        Tk.add(C);
+        User D=new Tk("Admin","123456","nguoi xem 3",3,"012345678");
+        Tk.add(D);
+    }
+    void them_TK()
+    {
+        User A = null;
+        A.Inputinfo();
+        Tk.add(A);
     }
     int TimKiemID(String id)
     {
@@ -67,6 +80,7 @@ public class Tk extends User {
                 case 2:{
                     System.out.println("Nhap ten moi: ");
                         Tk.get(i).ten=sc.nextLine();
+                      
                     break;
                 }
                 case 3:{
@@ -94,7 +108,7 @@ public class Tk extends User {
         for(int i=0;i<size;i++)
             if(Tk.get(i).getId()==id)
             {
-                System.out.println("");
+                System.out.println("ID: "+Tk.get(i).getId()+"\nmaso:"+Tk.get(i).getMaso()+"\nten:"+Tk.get(i).getTen()+"\nSDT: "+Tk.get(i).getSdt());
             }
     }
 }
