@@ -5,7 +5,7 @@
  */
 package bai3;
 
-import java.util.Random;
+
 
 
 /**
@@ -13,7 +13,6 @@ import java.util.Random;
  * @author Administrato
  */
 public class Member {
-    Random rd = new Random();
     private String name_m;
     private int songayhd;
     private int songaynghi;

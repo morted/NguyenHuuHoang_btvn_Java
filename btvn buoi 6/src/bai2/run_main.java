@@ -13,13 +13,21 @@ import java.util.Scanner;
  * @author Administrato
  */
 public class run_main {
-    public static void main(String[] args) throws IOException {
+    public static void clearScreen() 
+    {  
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();  
+    }  
+    public static void main(String[] args)  throws IOException, InterruptedException {
+        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        Runtime runtime = Runtime.getRuntime();
         Scanner sc=new Scanner (System.in);
         may_tinh casio= new may_tinh();
         float A,B,C;
         float [] a= new float[100];
         int op;
         do{
+            runtime.exec ("cls");
             System.out.println("\t================menu================");
             System.out.println("\t| 1.tinh tong hai so...............|");
             System.out.println("\t| 2.tinh tong 3 so.................|");

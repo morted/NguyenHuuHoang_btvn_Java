@@ -1,6 +1,6 @@
 package common;
 
-public class SinhVien {
+public abstract class SinhVien extends person{
     private String name;
     private int age;
 

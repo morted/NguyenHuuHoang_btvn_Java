@@ -9,7 +9,7 @@ package bai3;
  *
  * @author Administrato
  */
-public class Support {
+public class Support extends Leader{
         private String name;
         private int age;
         private String [] name_m=new String[4];
